@@ -8,4 +8,10 @@ burnaby = Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: tr
 richmond = Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
 gastown = Store.create(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
 
-puts Store.count
+@store1 = Store.find_by(id: 1)
+@store1.name = "Delta"
+@store1.save
+@store2 = Store.find_by(id: 2)
+
+
+
