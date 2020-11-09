@@ -9,9 +9,14 @@ richmond = Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel:
 gastown = Store.create(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
 
 @store1 = Store.find_by(id: 1)
-@store1.name = "Delta"
-@store1.save
+@store1.update(name: "Delta") 
+
 @store2 = Store.find_by(id: 2)
+
+@store3 = Store.find_by(id: 3)
+@store3.destroy
+
+
 
 
 
