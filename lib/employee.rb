@@ -11,9 +11,5 @@ class Employee < ActiveRecord::Base
   private
   def create_password
     self.password = (0...8).map { (65 + rand(26)).chr }.join
-
-    # If using after_create
-    # pass = (0...8).map { (65 + rand(26)).chr }.join
-    # self.update(password: pass) 
   end
 end
